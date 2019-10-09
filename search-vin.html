@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Search VIN - Members</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="./css/membersStyle-final_layout.css">
+  </head>
+  <body>
+    <div class="members">
+      <div class="members-header">
+        <div class="members-header d-flex justify-content-center align-items-center">
+          <h2><span>Welcome, </span>Fahad Qaiser</h2>
+        </div>
+        <!-- <div class="container">
+        </div> -->
+      </div>
+      <div class="container text-center">
+        <div class="row d-flex justify-content-center">
+          <div class="icons icon-1 col-md-2 col-sm-3 d-flex active"><a href="./search-vin.html"><div class="text">Search VIN</div></a></div>
+          <div class="icons icon-2 col-md-2 col-sm-3 d-flex"><a href="./my-reports.html"><div class="text">My Reports</div></a></div>
+          <div class="icons icon-3 col-md-2 col-sm-3 d-flex"><a href="./bill-of-sale.html"><div class="text">Bill of Sale</div></a></div>
+          <div class="icons icon-4 col-md-2 col-sm-3 d-flex"><a href="./order-history.html"><div class="text">Order History</div></a></div>
+          <div class="icons icon-5 col-md-2 col-sm-3 d-flex"><a href="./order-reports.html"><div class="text">Order Reports</div></a></div>
+          <div class="icons icon-6 col-md-2 col-sm-3 d-flex dropdown"><button href="./my-account.html" class="dropbtn"><div class="text">My Account</div></button>
+            <div class="dropdown-content">
+              <a href="./account-settings.html" class="dd-link">Account Settings</a>
+              <a href="./change-password.html" class="dd-link">Change Password</a>
+              <a href="#" class="dd-link">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container information mb-4">
+        <div class="row px-md-4">
+          <div class="col-12 mt-5">
+            <div class="title_icon"></div>
+            <h3><span>Search VIN</span></h3>
+            <br>
+            <div class="black-bg mb-3">
+              <h3>You Have 0 Report Left</h3>
+            </div>
+
+            <h6>Enter a Vehicle VIN Number below to retrieve your report</h6>
+
+          </div>
+
+          <div class="container">
+            <div class="row mt-4">
+
+              <div class="info-right__middle-item info-right__middle-first-item text-left col-12 col-lg-4" id="info-right__middle-first-item">
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="foobar" class="float-left mr-2"  onclick="byVIN()" checked>
+                      <h7><span>Search by VIN</span></h7>
+                  </label>
+                </div>
+                <div class="info-right__middle-first-item_content mt-5 float-left col-12" id="info-right__middle-first-item-content">
+                  <form action="" class="full-width">
+                    <input type="text" value="VIN Number" name="VIN Number">
+                    <button class="btn btn-success my-3" type="submit" id="btn1">Search VIN History</button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="info-right__middle-item info-right__middle-second-item text-left col-12 col-lg-4" id="info-right__middle-second-item">
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="foobar" class="float-left mr-2" onclick="byPlate()">
+                      <h7><span>Search by License Plate</span></h7>
+                  </label>
+                </div>
+                <div class="info-right__middle-first-item_content mt-5 float-left col-12" id="info-right__middle-second-item-content">
+                  <form action="" class="full-width">
+                    <input type="text" value="VIN Number" name="VIN Number">
+                    <select class="mt-2">
+                    	<option value="AL">Alabama</option>
+                    	<option value="AK">Alaska</option>
+                    	<option value="AZ">Arizona</option>
+                    	<option value="AR">Arkansas</option>
+                    	<option value="CA">California</option>
+                    	<option value="CO">Colorado</option>
+                    	<option value="CT">Connecticut</option>
+                    	<option value="DE">Delaware</option>
+                    	<option value="DC">District Of Columbia</option>
+                    	<option value="FL">Florida</option>
+                    	<option value="GA">Georgia</option>
+                    	<option value="HI">Hawaii</option>
+                    	<option value="ID">Idaho</option>
+                    	<option value="IL">Illinois</option>
+                    	<option value="IN">Indiana</option>
+                    	<option value="IA">Iowa</option>
+                    	<option value="KS">Kansas</option>
+                    	<option value="KY">Kentucky</option>
+                    	<option value="LA">Louisiana</option>
+                    	<option value="ME">Maine</option>
+                    	<option value="MD">Maryland</option>
+                    	<option value="MA">Massachusetts</option>
+                    	<option value="MI">Michigan</option>
+                    	<option value="MN">Minnesota</option>
+                    	<option value="MS">Mississippi</option>
+                    	<option value="MO">Missouri</option>
+                    	<option value="MT">Montana</option>
+                    	<option value="NE">Nebraska</option>
+                    	<option value="NV">Nevada</option>
+                    	<option value="NH">New Hampshire</option>
+                    	<option value="NJ">New Jersey</option>
+                    	<option value="NM">New Mexico</option>
+                    	<option value="NY">New York</option>
+                    	<option value="NC">North Carolina</option>
+                    	<option value="ND">North Dakota</option>
+                    	<option value="OH">Ohio</option>
+                    	<option value="OK">Oklahoma</option>
+                    	<option value="OR">Oregon</option>
+                    	<option value="PA">Pennsylvania</option>
+                    	<option value="RI">Rhode Island</option>
+                    	<option value="SC">South Carolina</option>
+                    	<option value="SD">South Dakota</option>
+                    	<option value="TN">Tennessee</option>
+                    	<option value="TX">Texas</option>
+                    	<option value="UT">Utah</option>
+                    	<option value="VT">Vermont</option>
+                    	<option value="VA">Virginia</option>
+                    	<option value="WA">Washington</option>
+                    	<option value="WV">West Virginia</option>
+                    	<option value="WI">Wisconsin</option>
+                    	<option value="WY">Wyoming</option>
+                    </select>
+                    <button class="btn btn-success my-3" type="submit" id="btn2">Search VIN History</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container my-3">
+            <div class="row">
+              <div class="col-12 col-lg-9">
+                <h5>VIN Accuracy Tips:</h5>
+                <h7>Find the VIN Number on your title or insurance records Write characters in groups of four with no spaces You will never find the letters "Q", "O" and "I" in a VIN All VIN's are 17 characters in length no longer no shorter The VIN has to come from a car, truck or motorcycle manufactured after 1981</h7>
+              </div>
+              <div class="find-vin col-12 col-lg-3">
+                <img src="./members_pages_images/vin-search.png" alt="Where Is Your VIN">
+              </div>
+            </div>
+          </div>
+            </div>
+          <div class="col-12 information-button text-center">
+            <p>Please be aware that Demo Vehicle History Report reports may not substitute an actual vehicle inspection. The information obtained using Demo Vehicle History Report searches may not always be accurate and up to date as we do not create or guarantee the accuracy or the amount of information provided through our service. Data availability is largely dependent on various sources from which the information is aggregated. By using Demo Vehicle History Report service you agree to comply with all our legal policies and disclaimers.</p>
+          </div>
+        </div>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/members-btns.js"></script>
+  </body>
+</html>
